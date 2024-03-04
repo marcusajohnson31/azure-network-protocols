@@ -112,10 +112,62 @@ Stop the ping activity
 <img src="https://imgur.com/GESPr9D.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-Back in Wireshark, filter for SSH traffic only (Switched to POwershell)
+Back in Wireshark, filter for SSH traffic only (Switched to Powershell)
 From your Windows 10 VM, “SSH into” your Ubuntu Virtual Machine (via its private IP address)
 Type commands (username, pwd, etc) into the linux SSH connection and observe SSH traffic spam in WireShark
 Exit the SSH connection by typing ‘exit’ and pressing [Enter]
 
 </p>
+<br />
+
+
+<p>
+<img src="https://imgur.com/7Fie4Mk.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+(Observe DHCP Traffic)
+Back in Wireshark, filter for DHCP traffic only
+
+<br />
+
+
+<p>
+<img src="https://imgur.com/eCd7cOD.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+From your Windows 10 VM, attempt to issue your VM a new IP address from the command line (ipconfig /renew)
+Observe the DHCP traffic appearing in WireShark
+
+<br />
+
+
+<p>
+<img src="https://imgur.com/VJ0jrCf.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+
+Back in Wireshark, filter for DNS traffic only
+From your Windows 10 VM within a command line, use nslookup to see what google.com 
+
+<br />
+
+
+<p>
+<img src="https://imgur.com/ECZwIaA.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+Use nslookup to see disney.com’s IP address
+Observe the DNS traffic being show in WireShark
+
+<br />
+
+
+<p>
+<img src="https://imgur.com/cU02GzI.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+</p>
+<p>
+(Observe RDP Traffic)
+Back in Wireshark, filter for RDP traffic only (tcp.port == 3389)
+Observe the immediate non-stop spam of traffic
+
 <br />
