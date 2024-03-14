@@ -71,7 +71,7 @@ From The Windows 10 VM, open command line or PowerShell and attempt to ping a pu
 <img src="https://imgur.com/SJmZAz9.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>
 <p>
-nitiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
+Initiate a perpetual/non-stop ping from your Windows 10 VM to your Ubuntu VM
 
 <br />
 
